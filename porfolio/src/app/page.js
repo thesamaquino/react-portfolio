@@ -5,16 +5,23 @@ import { HeroBanner } from "@/components/HeroBanner";
 import { Navbar } from "@/components/Navbar";
 import { Projects } from "@/components/project/Projects";
 import { Divider } from "@mui/material";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+     <Head>
+        <title>Sam Aquino</title>
+        <meta name="description" content="Welcome to my portfolio site." />
+      </Head>
     <Navbar/>
-    <HeroBanner/>
-    <AboutMe />
-    <Projects />
-    <Divider/>
-    <Contact/>
-    </>
+   <main>
+      <HeroBanner/>
+      <AboutMe />
+      <Projects />
+      <Divider/>
+      <Contact/>
+   </main>
+   </>
   );
 }
