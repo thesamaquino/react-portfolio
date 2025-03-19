@@ -37,19 +37,51 @@ export const ProjectsList = () => {
     skill = skill.toLowerCase();
     switch (skill) {
       case "figma":
-        return "#E57373";
+        return "#ffa07a";
       case "wireframing":
-        return "#4DB6AC";
+        return "#ffd54f";
       case "react":
-        return "#FFB74D";
+        return "#d4a6ff";
       case "html":
-        return "#81C784";
+        return "#ff9ebf";
       case "css":
-        return "#FFD54F";
+        return "#ffa500";
       case "javascript":
-        return "#64B5F6";
+        return "#ff6f61";
+      case "tailwind":
+        return "#8e44ad";
+      case "react":
+        return "#ffcc66";
+      case "wordpress":
+        return "#42aaff";
       default:
-        return "#7986CB";
+        return "#ff85d6";
+    }
+  }
+  
+  const getTextColor = (skill) => {
+    skill = skill.toLowerCase();
+    switch (skill) {
+      case "figma":
+        return "#ffffff";
+      case "wireframing":
+        return "#000000";
+      case "react":
+        return "#ffffff";
+      case "html":
+        return "#ffffff";
+      case "css":
+        return "#000000";
+      case "javascript":
+        return "#ffffff";
+      case "tailwind":
+        return "#ffffff";
+      case "react":
+        return "#000000";
+      case "wordpress":
+        return "#ffffff";
+      default:
+        return "#ffffff";
     }
   }
 
@@ -112,6 +144,7 @@ export const ProjectsList = () => {
                         key={index}
                         label={skill}
                         sx={{
+                          color: getTextColor(skill),
                           backgroundColor: getChipColor(skill)
                         }}
                       />

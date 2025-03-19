@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Button, Paper, Stack, Typography } from '@mui/material'
+import { Box, Button, Paper, Skeleton, Stack, Typography } from '@mui/material'
 import { ProfileImage } from './ProfileImage'
 import Link from 'next/link';
 import { useState } from 'react';
@@ -19,11 +19,14 @@ export const AboutMe = () => {
        paddingTop: '171px',
        paddingBottom: 8
        }}>
+   
       <Typography variant="h2">About Me</Typography>
+      <Skeleton sx={{backgroundColor: "#fff687", width: '40%'}}/>
+      <Skeleton sx={{backgroundColor: "#e6bbff", width: '95%', marginLeft: 'auto'}}/>
         <Stack sx={{paddingX: {xs: 1, sm: 2, md: 4, lg: 8}, paddingY: 4}}>
           {/* <ProfileImage /> */}
           <Autobiography/>
-          <SkillsGraph/>
+          {/* <SkillsGraph/> */}
         </Stack>
 
     </Box>

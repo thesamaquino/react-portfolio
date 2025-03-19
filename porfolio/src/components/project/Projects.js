@@ -1,4 +1,4 @@
-import { Box,Stack,Typography } from '@mui/material'
+import { Box,Skeleton,Typography } from '@mui/material'
 import React from 'react'
 import { ProjectsList } from './ProjectsList';
 
@@ -15,6 +15,8 @@ export const Projects = () => {
         }}
       >
        <Typography variant='h2'>My Projects</Typography>
+       <Skeleton sx={{backgroundColor: "#fff687", width: '40%'}}/>
+      <Skeleton sx={{backgroundColor: "#e6bbff", width: '95%', marginLeft: 'auto'}}/>
        <ProjectsList />
       </Box>
   )

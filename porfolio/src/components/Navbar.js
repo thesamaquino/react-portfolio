@@ -1,9 +1,10 @@
 'use client';
-import { AppBar, IconButton, List, ListItem,  Stack, Toolbar, Typography } from "@mui/material"
+import { AppBar, Box, IconButton, List, ListItem,  Stack, Toolbar, Typography } from "@mui/material"
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,8 +31,8 @@ export const Navbar = () => {
           <ListItem key={index}
           sx={{
             '&:hover': {
-              backgroundColor: 'white', // Hover background color for the whole ListItem
-              color: 'secondary.main',  // Optional: Change the text color on hover
+              backgroundColor: 'white', 
+              color: '#ff4d6d',  
             },
           }}
           >
@@ -66,7 +67,7 @@ export const Navbar = () => {
         transition: 'all 300ms ease-in-out '
       }}>
         <Toolbar sx={{ maxWidth: 1248, width: "100%", mx: "auto", paddingY: 2, position: 'sticky'  }}>
-          <Typography
+          {/* <Typography
             variant="h1"
             noWrap
             component="div"
@@ -74,7 +75,26 @@ export const Navbar = () => {
             color='black'
           >
             Sam
-          </Typography>
+          </Typography> */}
+           <Box
+      sx={{
+        flexGrow: 1,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "flex-start",
+      }}
+    >
+      <Image
+        src="/horizontal-logo.svg" // Replace with the actual path to your logo
+        alt="Logo"
+        width={100} // Specify the width
+        height={40} // Specify the height
+        priority // Ensures the logo is loaded early for better LCP
+        style={{
+          objectFit: "contain", // Maintain aspect ratio
+        }}
+      />
+    </Box>
           <IconButton
             size="large"
             edge="start"
