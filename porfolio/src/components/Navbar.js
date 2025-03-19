@@ -1,6 +1,5 @@
 'use client';
-
-import { AppBar, Box, Divider, Drawer, IconButton, List, ListItem, ListItemText, Stack, Toolbar, Typography } from "@mui/material"
+import { AppBar, IconButton, List, ListItem,  Stack, Toolbar, Typography } from "@mui/material"
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react";
@@ -12,13 +11,21 @@ export const Navbar = () => {
     setIsOpen(!isOpen);
   }
 
-  const nav = ['About Me', 'Projects', "Let's connect"];
+  const nav = [
+    {link: '#about', title: 'About Me'},
+    {link: '#projects', title: 'My Projects'},
+    {link: '#contact', title: "Let's connect"}
+  ];
   const NavItems = (
     <List 
     sx={{
+      maxWidth: 1248,
+      width: "100%",
+      mx: "auto",
+      paddingY: 8,
       height: 'calc(100vh - 98px)'
     }}>
-      {nav.map((text, index) => (
+      {nav.map((navItem, index) => (
         
           <ListItem key={index}
           sx={{
@@ -29,22 +36,17 @@ export const Navbar = () => {
           }}
           >
             <Link 
-              href="#" 
+              href={navItem.link}
             > 
-              
               <Typography
-              variant="h4"
               sx={{
                 textDecoration: 'none',
                 display: 'block',
                 padding: '8px 16px',
-                /* '&:hover': {
-                  backgroundColor: 'white',
-                  color: 'secondary.main',
-                }, */
+                fontSize: {xs: '3rem', sm: '4rem', md:'6rem', lg: '7rem'}
               }}
             >
-              {text}
+              {navItem.title}
             </Typography></Link>
           </ListItem>
       ))}
@@ -55,43 +57,45 @@ export const Navbar = () => {
 
   return (
     <>
-      <AppBar position="relative" 
+      <AppBar position="sticky" 
       sx={{
-        zIndex: 20,
+        zIndex: 200,
         backgroundColor: "pink",
         border: isOpen && 'none',
         boxShadow: isOpen && 'none',
         transition: 'all 300ms ease-in-out '
       }}>
-        <Toolbar>
+        <Toolbar sx={{ maxWidth: 1248, width: "100%", mx: "auto", paddingY: 2, position: 'sticky'  }}>
           <Typography
-            variant="h4"
+            variant="h1"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: 'block' }}
+            sx={{ flexGrow: 1, display: 'block', fontSize:{xs: '3rem', sm: '4rem',}}}
+            color='black'
           >
-            Sam Aquino
+            Sam
           </Typography>
           <IconButton
             size="large"
             edge="start"
-            color="inherit"
+            color="rgba(0,0,0,0.54)"
             aria-label="open drawer"
             sx={{
-               mr: 2,
+               mr: 2
                }}
             onClick={handleClick}
           >
             {
-              isOpen ? <CloseIcon sx={{fontSize: '2.5rem'}} /> : <MenuIcon sx={{fontSize: '2.5rem'}} />
+              isOpen ? <CloseIcon sx={{fontSize: '3rem'}} /> : <MenuIcon sx={{fontSize: '3rem'}} />
             }
 
           </IconButton>
         </Toolbar>
       </AppBar>
-     <Stack
+     <Stack  
           sx={{
-            position: 'absolute',
+            position: 'fixed',
+            zIndex: 100,
             top: 64,
             left: 0,
             width: '100%',

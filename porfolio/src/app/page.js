@@ -1,9 +1,10 @@
+
 import { AboutMe } from "@/components/about/AboutMe";
 import { Contact } from "@/components/contact/Contact";
 import { HeroBanner } from "@/components/HeroBanner";
 import { Navbar } from "@/components/Navbar";
 import { Projects } from "@/components/project/Projects";
-import Image from "next/image";
+import { Divider } from "@mui/material";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
     <HeroBanner/>
     <AboutMe />
     <Projects />
+    <Divider/>
     <Contact/>
     </>
   );
