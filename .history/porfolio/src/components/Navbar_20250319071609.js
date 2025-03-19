@@ -30,7 +30,6 @@ export const Navbar = () => {
         
           <ListItem key={index}
           sx={{
-            color: '#000000',
             '&:hover': {
               backgroundColor: 'white', 
               color: '#ff4d6d',  
