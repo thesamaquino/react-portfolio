@@ -85,13 +85,13 @@ export const Navbar = () => {
       }}
     >
       <Image
-        src="/horizontal-logo.svg" // Replace with the actual path to your logo
+        src="/horizontal-logo.webp" 
         alt="Logo"
-        width={100} // Specify the width
-        height={40} // Specify the height
-        priority // Ensures the logo is loaded early for better LCP
+        width={100} 
+        height={100} 
+        priority 
         style={{
-          objectFit: "contain", // Maintain aspect ratio
+          objectFit: "contain", 
         }}
       />
     </Box>
