@@ -30,6 +30,14 @@ export const ProjectsList = () => {
       link: 'https://sheaqu.dreamhosters.com/projects/something-big-library/',
       skills: ['HTML', 'CSS', 'JavaScript'],
     },
+    {
+      image: 'swatchlab.webp',
+      imageAltText: 'Fabric catalogue website in phone and laptop mockups',
+      title: 'Fabric Catalogue',
+      description: 'A Crud application where authenticated users can add, edit and delete fabrics and fun facts',
+      link: 'https://sheaqu.dreamhosters.com/portfolio/public/',
+      skills: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Bootstrap'],
+    },
 
   ]
 
@@ -50,7 +58,7 @@ export const ProjectsList = () => {
         return "#ff6f61";
       case "tailwind":
         return "#8e44ad";
-      case "react":
+      case "bootstrap":
         return "#ffcc66";
       case "wordpress":
         return "#42aaff";
