@@ -15,7 +15,8 @@ export const Navbar = () => {
   const nav = [
     {link: '/#about', title: 'About Me'},
     {link: '/#projects', title: 'My Projects'},
-    {link: '/#contact', title: "Let's connect"}
+    {link: '/#volunteer', title: 'Volunteer Work'},
+    {link: '/#contact', title: "Let's connect"},
   ];
   const NavItems = (
     <List 
@@ -23,7 +24,7 @@ export const Navbar = () => {
       maxWidth: 1248,
       width: "100%",
       mx: "auto",
-      paddingY: 4,
+      paddingY: 8,
       height: 'calc(100vh - 98px)'
     }}>
       {nav.map((navItem, index) => (
@@ -45,7 +46,7 @@ export const Navbar = () => {
                 textDecoration: 'none',
                 display: 'block',
                 padding: '8px 16px',
-                fontSize: {xs: '3rem', sm: '4rem', md:'6rem', lg: '7rem'}
+                fontSize: {xs: '3rem', sm: '4rem', md:'5rem'}
               }}
             >
               {navItem.title}

@@ -72,9 +72,11 @@ export default function Focus() {
             }} 
             width="100%" 
             height="800" 
-            src="https://embed.figma.com/design/U1piprHnEkQxSxOrPazG7j/Design-Composition-Assignment---Starter-Files-(1)?node-id=24-88&embed-host=share" 
+            src="https://www.figma.com/design/U1piprHnEkQxSxOrPazG7j/Design-Composition-Assignment---Starter-Files-(1)?node-id=24-88&t=wXTWFYplTgTCBPx0-1" 
             allowFullScreen
           ></iframe>
+
+
 
         <Typography 
           variant="h5" component="p" 
