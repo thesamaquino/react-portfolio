@@ -11,7 +11,7 @@ export const ProjectsList = () => {
       imageAltText: 'cloudberry website in phone and laptop mockups',
       title: 'Farm Design Project',
       description: "Designing the hi-fi version of the the farm website and wireframing(lo-fi) of our own layout design",
-      link: '#',
+      link: '/projects/cloudberry',
       skills: ['Figma', 'Wireframing'],
     },
     {
@@ -19,15 +19,15 @@ export const ProjectsList = () => {
       imageAltText: 'focus website in phone and laptop mockups',
       title: 'Photography Website Design Project',
       description: "Designing a photography club website from scratch based on an imaginary client's needs",
-      link: '#',
+      link: '/projects/focus',
       skills: ['Figma', 'Wireframing'],
     },
     {
       image: 'something-big.webp',
       imageAltText: 'made up gallery website in phone and laptop mockups',
       title: 'Gallery Website',
-      description: 'Coding and designing the layout of the mobile view',
-      link: 'https://sheaqu.dreamhosters.com/projects/something-big-library/',
+      description: 'Designing the mobile view of a hypothetical gallery and coding both the mobile and desktop view.',
+      link: '/projects/something-big',
       skills: ['HTML', 'CSS', 'JavaScript'],
     },
     {
@@ -35,7 +35,7 @@ export const ProjectsList = () => {
       imageAltText: 'Fabric catalogue website in phone and laptop mockups',
       title: 'Fabric Catalogue',
       description: 'A Crud application where authenticated users can add, edit and delete fabrics and fun facts',
-      link: 'https://sheaqu.dreamhosters.com/portfolio/public/',
+      link: '/projects/swatchlab',
       skills: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Bootstrap'],
     },
 

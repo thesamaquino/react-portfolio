@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { Autobiography } from './Autobiography';
 import SkillsGraph from './SkillsGraph';
+import Skills from './Skills';
 
 export const AboutMe = () => {
 
@@ -26,6 +27,7 @@ export const AboutMe = () => {
         <Stack sx={{paddingX: {xs: 1, sm: 2, md: 4, lg: 8}, paddingY: 4}}>
           {/* <ProfileImage /> */}
           <Autobiography/>
+          <Skills />
           {/* <SkillsGraph/> */}
         </Stack>
 

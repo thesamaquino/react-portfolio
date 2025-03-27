@@ -13,9 +13,9 @@ export const Navbar = () => {
   }
 
   const nav = [
-    {link: '#about', title: 'About Me'},
-    {link: '#projects', title: 'My Projects'},
-    {link: '#contact', title: "Let's connect"}
+    {link: '/#about', title: 'About Me'},
+    {link: '/#projects', title: 'My Projects'},
+    {link: '/#contact', title: "Let's connect"}
   ];
   const NavItems = (
     <List 
@@ -23,7 +23,7 @@ export const Navbar = () => {
       maxWidth: 1248,
       width: "100%",
       mx: "auto",
-      paddingY: 8,
+      paddingY: 4,
       height: 'calc(100vh - 98px)'
     }}>
       {nav.map((navItem, index) => (
