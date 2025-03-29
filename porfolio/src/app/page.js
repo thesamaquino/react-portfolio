@@ -1,4 +1,6 @@
 
+'use client';
+
 import { AboutMe } from "@/components/about/AboutMe";
 import { Contact } from "@/components/contact/Contact";
 import { HeroBanner } from "@/components/HeroBanner";

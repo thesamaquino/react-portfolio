@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, CardMedia, Chip, Stack, Typography } from '@mui/material'
+import { Box, Card, CardContent, CardMedia, Typography } from '@mui/material'
 import React from 'react'
 import Grid from '@mui/material/Grid2';
 
@@ -6,13 +6,13 @@ import Grid from '@mui/material/Grid2';
 export const VolunteerList = () => {
   const projects = [
     {
-      image: 'naitsa-logo.png',
+      image: 'naitsa-logo.webp',
       imageAltText: 'NAITSA logo',
       title: 'Blood Drive for Canadian Blood Services (NAITSA, February 12, 2024',
       description: "Volunteered as a blood donor at NAITSA's blood donation drive, contributing to efforts to save lives and support community health initiatives.",
     },
     {
-      image: 'iicc-logo.jpg',
+      image: 'iicc-logo.webp',
       imageAltText: 'International and Intercultural Community Center Logo',
       title: 'Winter Welcome Team (IICC, January 4-9, 2024)',
       description: "Volunteered to provide a welcome infor package to new students to help them acclimate to NAIT and Canada.",
@@ -45,19 +45,20 @@ export const VolunteerList = () => {
               >
                 <CardMedia
                   component="img"
-                  sx={{ height: 200, width: '100%' }}
+                  sx={{ height: 200, width: '100%', objectFit: 'contain' }}
                   image={project.image}
                   alt={project.imageAltText}
                 />
                 <CardContent>
                   <Typography
                     gutterBottom variant="h5"
-                    component="div"
+                    component="h3"
                   >
                     {project.title}
                   </Typography>
                   <Typography
                     variant="h6"
+                    component="p"
                     sx={{ color: 'text.secondary' }}
                   >
                     {project.description}

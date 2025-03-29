@@ -37,14 +37,14 @@ export const Contact = () => {
         </Typography>
         {/* icons */}
         <Stack direction="row" spacing={3}>
-          <Link href="#" target="_blank">
-            <IconButton size="large" sx={{color: '#ff4d6d'}}>
+          <Link href="https://www.linkedin.com/in/sheilaaquino92/" target="_blank" aria-label="View my Linkedin Profile">
+            <IconButton size="large" sx={{color: '#ff4d6d'}} aria-label="LinkedIn Icon" title="Visit my LinkedIn profile">
               <LinkedInIcon sx={{ fontSize: "2.5rem" }} />
             </IconButton>
           </Link>
-          <Link href="https://github.com/thesamaquino" target="_blank">
-            <IconButton size="large" sx={{color: '#ff4d6d'}}>
-              <GitHubIcon sx={{ fontSize: "2.5rem" }} />
+          <Link href="https://github.com/thesamaquino" target="_blank" aria-label="View my Github Profile">
+            <IconButton size="large" sx={{color: '#ff4d6d'}} aria-label="Github Icon">
+              <GitHubIcon sx={{ fontSize: "2.5rem" }} title="Visit my Github Profile"/>
             </IconButton>
           </Link>
         </Stack>

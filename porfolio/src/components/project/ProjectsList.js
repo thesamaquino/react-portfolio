@@ -67,31 +67,31 @@ export const ProjectsList = () => {
     }
   }
   
-  const getTextColor = (skill) => {
-    skill = skill.toLowerCase();
-    switch (skill) {
-      case "figma":
-        return "#ffffff";
-      case "wireframing":
-        return "#000000";
-      case "react":
-        return "#ffffff";
-      case "html":
-        return "#ffffff";
-      case "css":
-        return "#000000";
-      case "javascript":
-        return "#ffffff";
-      case "tailwind":
-        return "#ffffff";
-      case "react":
-        return "#000000";
-      case "wordpress":
-        return "#ffffff";
-      default:
-        return "#ffffff";
-    }
-  }
+  // const getTextColor = (skill) => {
+  //   skill = skill.toLowerCase();
+  //   switch (skill) {
+  //     case "figma":
+  //       return "#ffffff";
+  //     case "wireframing":
+  //       return "#000000";
+  //     case "react":
+  //       return "#ffffff";
+  //     case "html":
+  //       return "#ffffff";
+  //     case "css":
+  //       return "#000000";
+  //     case "javascript":
+  //       return "#ffffff";
+  //     case "tailwind":
+  //       return "#ffffff";
+  //     case "react":
+  //       return "#000000";
+  //     case "wordpress":
+  //       return "#ffffff";
+  //     default:
+  //       return "#ffffff";
+  //   }
+  // }
 
   return (
     <Box
@@ -131,12 +131,13 @@ export const ProjectsList = () => {
                 <CardContent>
                   <Typography
                     gutterBottom variant="h5"
-                    component="div"
+                    component="h3"
                   >
                     {project.title}
                   </Typography>
                   <Typography
                     variant="h6"
+                    component="p"
                     sx={{ color: 'text.secondary' }}
                   >
                     {project.description}
@@ -152,7 +153,7 @@ export const ProjectsList = () => {
                         key={index}
                         label={skill}
                         sx={{
-                          color: getTextColor(skill),
+                          color: 'black',
                           backgroundColor: getChipColor(skill)
                         }}
                       />
