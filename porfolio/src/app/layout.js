@@ -1,3 +1,5 @@
+// a shared layout for all of the following components.
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 

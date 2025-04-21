@@ -38,6 +38,22 @@ export const ProjectsList = () => {
       link: '/projects/swatchlab',
       skills: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Bootstrap'],
     },
+    {
+      image: 'st-philip.webp',
+      imageAltText: 'Church website in phone and laptop mockups',
+      title: 'St. Philip Church Website',
+      description: "A capstone project where I lead the development of the site and style the majority of the pages following the lead designer's design.",
+      link: '/projects/st-philip',
+      skills: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Wordpress'],
+    },
+    {
+      image: 'stronghold.webp',
+      imageAltText: 'Video-based mental health support website in phone and laptop mockups',
+      title: 'Stronghold Website',
+      description: 'A capstone project where I setup and design the database as well as generate dummy data through seeders and factories.',
+      link: '/projects/stronghold',
+      skills: ['Database Design & Integration', 'Eloquent ORM'],
+    },
 
   ]
 
