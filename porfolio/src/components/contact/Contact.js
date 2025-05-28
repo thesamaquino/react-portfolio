@@ -26,8 +26,8 @@ export const Contact = () => {
       {/* leftside of the contact */}
 
       <Typography variant="h2">Let&rsquo;s Connect</Typography>
-      <Skeleton sx={{backgroundColor: "#fff687", width: '40%'}}/>
-      <Skeleton sx={{backgroundColor: "#e6bbff", width: '95%', marginLeft: 'auto'}}/>
+      <Skeleton sx={{ backgroundColor: "#fff687", width: '40%' }} />
+      <Skeleton sx={{ backgroundColor: "#e6bbff", width: '95%', marginLeft: 'auto' }} />
       <Stack spacing={3} sx={{ paddingX: { xs: 1, sm: 2, md: 4, lg: 8 }, paddingY: 4 }} >
         <Typography sx={{ fontSize: '2rem' }}>
           Did I successfully manage to come across as interesting and you wanna connect?
@@ -38,13 +38,13 @@ export const Contact = () => {
         {/* icons */}
         <Stack direction="row" spacing={3}>
           <Link href="https://www.linkedin.com/in/sheilaaquino92/" target="_blank" aria-label="View my Linkedin Profile">
-            <IconButton size="large" sx={{color: '#ff4d6d'}} aria-label="LinkedIn Icon" title="Visit my LinkedIn profile">
+            <IconButton size="large" sx={{ color: '#ff4d6d' }} aria-label="LinkedIn Icon" title="Visit my LinkedIn profile">
               <LinkedInIcon sx={{ fontSize: "2.5rem" }} />
             </IconButton>
           </Link>
-          <Link href="https://github.com/thesamaquino" target="_blank" aria-label="View my Github Profile">
-            <IconButton size="large" sx={{color: '#ff4d6d'}} aria-label="Github Icon">
-              <GitHubIcon sx={{ fontSize: "2.5rem" }} title="Visit my Github Profile"/>
+          <Link href="https://github.com/smaq92" target="_blank" aria-label="View my Github Profile">
+            <IconButton size="large" sx={{ color: '#ff4d6d' }} aria-label="Github Icon">
+              <GitHubIcon sx={{ fontSize: "2.5rem" }} title="Visit my Github Profile" />
             </IconButton>
           </Link>
         </Stack>
