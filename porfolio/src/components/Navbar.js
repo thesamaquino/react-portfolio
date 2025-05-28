@@ -40,12 +40,10 @@ export const Navbar = () => {
         >
           <Link
             href={navItem.link}
+            style={{ display: 'block', width: '100%', padding: '8px 16px', textDecoration: 'none' }}
           >
             <Typography
               sx={{
-                textDecoration: 'none',
-                display: 'block',
-                padding: '8px 16px',
                 fontSize: { xs: '3rem', sm: '4rem', md: '5rem' }
               }}
             >
