@@ -83,7 +83,7 @@ export default function Focus() {
         sx={{
           maxWidth: 1248,
           width: "100%",
-          mx: "0 auto",
+          mx: "auto",
           pt: '100px',
           pb: 8,
           px: { sm: 6, lg: 8 },
@@ -94,6 +94,7 @@ export default function Focus() {
           component="h1"
           sx={{
             mb: 3,
+            fontSize: 'clamp(2rem, 1.0809rem + 2.9412vw, 3.375rem)', 
           }}
         >
           Farm Design Project

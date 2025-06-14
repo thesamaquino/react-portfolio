@@ -68,13 +68,12 @@ export default function SomethingBig() {
           spacing={4}
           sx={{ alignItems: "center" }}>
           <Typography
-            variant="h2"
             component="h1"
             sx={{
               mb: 3,
-              wordWrap: "break-word"
+              wordWrap: "break-word",
+              fontSize: 'clamp(2rem, 1.0809rem + 2.9412vw, 3.375rem)', 
             }}
-
           >
             Gallery Website
           </Typography>
@@ -147,7 +146,7 @@ export default function SomethingBig() {
               backgroundColor: "#fff687", color: "#000000"
             }}>Previous Project</Button>
           </Link>
-          <Link href="/projects/swatchlab" aria-label="View Fabric Catalogue CRUD Project">
+          <Link href="/projects/st-philip" aria-label="View Fabric Catalogue CRUD Project">
             <Button variant="contained" sx={{
               backgroundColor: "#e6bbff", color: "#000000"
             }} >Next Project</Button>

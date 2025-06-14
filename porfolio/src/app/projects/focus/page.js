@@ -90,22 +90,19 @@ export default function Focus() {
       <Box
         sx={{
           maxWidth: 1248,
-          minWidth: 320,
-          mx: "auto",
           width: "100%",
-          pb: 8,
+          mx: "auto",
           pt: '100px',
-          px: 8,
-
+          pb: 8,
+          px: { sm: 6, lg: 8 },
         }}
       >
-
         <Typography
           variant="h2"
           component="h1"
           sx={{
             mb: 3,
-            fontSize: { xs: "1.75rem", sm: "2.25rem", md: "3rem" },
+            fontSize: 'clamp(2rem, 1.0809rem + 2.9412vw, 3.375rem)', 
             wordWrap: "break-word"
           }}
         >
@@ -150,7 +147,7 @@ export default function Focus() {
           </Typography>
           <ImageList
             sx={{
-              width: 950,
+              width: '100%',
               height: 450,
               margin: "0 auto",
               backgroundColor: "#ffffff",
@@ -159,7 +156,6 @@ export default function Focus() {
               boxShadow: "0px 3px 5px #e6bbff",
               alignSelf: "center"
             }}
-            cols={3}
             rowHeight={400}
           >
             {itemData.map((item) => (
@@ -208,7 +204,7 @@ export default function Focus() {
           </Typography>
           <ImageList
             sx={{
-              width: 950,
+              width: "100%",
               margin: "0 auto",
               backgroundColor: "#ffffff",
               padding: 2,
@@ -216,8 +212,7 @@ export default function Focus() {
               boxShadow: "0px 3px 5px #fff687",
               alignSelf: "center"
             }}
-            variant="masonry"
-            cols={3}
+          
           >
             {pageData.map((item) => (
               <ImageListItem key={item.img}>
@@ -240,16 +235,16 @@ export default function Focus() {
             }}
           >
             <iframe
-              sx={{
-                border: "1px solid rgba(0, 0, 0, 0.1);",
-                alignSelf: "center"
+              style={{
+                border: "1px solid rgba(0, 0, 0, 0.1)",
+                borderRadius: '8px'
               }}
-              width="800"
-              height="450"
+              width="100%"
+              height="800"
               src="https://embed.figma.com/design/7hrER0tpNqIFVHDYlIbmSB/high-fidelity-landing-page?node-id=2187-1369&embed-host=share"
               loading="lazy"
-              allowFullScreen>
-            </iframe>
+              allowFullScreen
+            ></iframe>
           </Stack>
         </Stack>
 

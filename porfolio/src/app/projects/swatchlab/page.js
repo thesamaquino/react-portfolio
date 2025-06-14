@@ -45,11 +45,11 @@ export default function Swatchlab() {
 
         <Stack direction="row" spacing={4} sx={{ alignItems: "center" }}>
           <Typography
-            variant="h2"
             component="h1"
             sx={{
               mb: 3,
               wordWrap: "break-word",
+              fontSize: 'clamp(2rem, 1.0809rem + 2.9412vw, 3.375rem)', 
             }}
 
           >
@@ -103,7 +103,7 @@ export default function Swatchlab() {
         </Typography>
 
         <Stack direction="row" justifyContent="space-between" width="100%" mt={4}>
-          <Link href="/projects/something-big" passHref aria-label="View Gallery Project">
+          <Link href="/projects/stronghold" passHref aria-label="View Gallery Project">
             <Button variant="contained" sx={{
               backgroundColor: "#fff687", color: "#000000"
             }} >Previous Project</Button>
